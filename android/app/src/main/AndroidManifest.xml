@@ -1,9 +1,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.insanestudios.bmi_app">
    <application
-        android:label="bmi_app"
+        android:label="BMI Calculator"
         android:name="${applicationName}"
-        android:icon="@mipmap/ic_launcher">
+        android:icon="@mipmap/bmi_icon">
         <activity
             android:name=".MainActivity"
             android:exported="true"

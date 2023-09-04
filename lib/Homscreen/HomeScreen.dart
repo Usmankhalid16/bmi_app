@@ -2,7 +2,6 @@ import 'package:bmi_app/Theme/Colors.dart';
 import 'package:bmi_app/Utils/CustomText.dart';
 import 'package:bmi_app/Utils/Heading.dart';
 import 'package:flutter/material.dart';
-import 'package:simple_icons/simple_icons.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 import '../Resultscreen/ResultScreen.dart';
@@ -37,65 +36,65 @@ class _HomescreenState extends State<Homescreen> {
         resizeToAvoidBottomInset: true,
         key: _scaffoldKey,
         appBar: AppBar(
-          leading: IconButton(
-            icon: const Icon(Icons.menu_outlined),
-            onPressed: () {
-              _scaffoldKey.currentState!.openDrawer();
-            },
-          ),
+          // leading: IconButton(
+          //   icon: const Icon(Icons.menu_outlined),
+          //   onPressed: () {
+          //     _scaffoldKey.currentState!.openDrawer();
+          //   },
+          // ),
           backgroundColor: background,
         ),
-        drawer: Drawer(
-          child: ListView(
-            padding: EdgeInsets.zero,
-            children: [
-              DrawerHeader(
-                child: Column(
-                  children: const [
-                    CustomText(
-                      text: 'INSANE',
-                      size: 36,
-                      weight: FontWeight.bold,
-                      spacing: 9.3,
-                    ),
-                    CustomText(
-                      text: 'STUDIOS',
-                      size: 36,
-                      weight: FontWeight.bold,
-                      spacing: 4,
-                    ),
-                  ],
-                ),
-              ),
-              ListTile(
-                title: const CustomText(
-                  text: 'Developed by: Usman Khalid',
-                ),
-                onTap: () {
-                  // Handle navigation or action for this item
-                },
-              ),
-              ListTile(
-                leading: const Icon(SimpleIcons.github),
-                title: const CustomText(
-                  text: 'Github',
-                ),
-                onTap: () {
-                  _launchUrl();
-                },
-              ),
-              ListTile(
-                leading: const Icon(SimpleIcons.linkedin),
-                title: const CustomText(
-                  text: 'LinkedIn',
-                ),
-                onTap: () {
-                  _launchUrl1();
-                },
-              ),
-            ],
-          ),
-        ),
+        // drawer: Drawer(
+        //   child: ListView(
+        //     padding: EdgeInsets.zero,
+        //     children: [
+        //       DrawerHeader(
+        //         child: Column(
+        //           children: const [
+        //             CustomText(
+        //               text: 'INSANE',
+        //               size: 36,
+        //               weight: FontWeight.bold,
+        //               spacing: 9.3,
+        //             ),
+        //             CustomText(
+        //               text: 'STUDIOS',
+        //               size: 36,
+        //               weight: FontWeight.bold,
+        //               spacing: 4,
+        //             ),
+        //           ],
+        //         ),
+        //       ),
+        //       ListTile(
+        //         title: const CustomText(
+        //           text: 'Developed by: Usman Khalid',
+        //         ),
+        //         onTap: () {
+        //           // Handle navigation or action for this item
+        //         },
+        //       ),
+        //       ListTile(
+        //         leading: const Icon(SimpleIcons.github),
+        //         title: const CustomText(
+        //           text: 'Github',
+        //         ),
+        //         onTap: () {
+        //           _launchUrl();
+        //         },
+        //       ),
+        //       ListTile(
+        //         leading: const Icon(SimpleIcons.linkedin),
+        //         title: const CustomText(
+        //           text: 'LinkedIn',
+        //         ),
+        //         onTap: () {
+        //           _launchUrl1();
+        //         },
+        //       ),
+        //     ],
+        //   ),
+        // ),
         body: Padding(
           padding: const EdgeInsets.only(top: 16, left: 2, right: 2),
           child: SingleChildScrollView(
